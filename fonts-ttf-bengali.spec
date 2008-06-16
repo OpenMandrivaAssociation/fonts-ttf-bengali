@@ -2,7 +2,7 @@ Summary: A set of Bangla fonts under GPL
 Name: fonts-ttf-bengali
 # version number is defined at http://www.bengalinux.org/downloads/
 Version: 0.5
-Release: %mkrel 4
+Release: %mkrel 5
 License: GPL
 Group: System/Fonts/True type
 Source0: http://savannah.nongnu.org/download/freebangfont/Akaash-0.8.5.tar.bz2
