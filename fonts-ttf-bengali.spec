@@ -2,7 +2,7 @@ Summary: A set of Bangla fonts under GPL
 Name: fonts-ttf-bengali
 # version number is defined at http://www.bengalinux.org/downloads/
 Version: 0.5
-Release: %mkrel 6
+Release: %mkrel 7
 License: GPL
 Group: System/Fonts/True type
 Source0: http://savannah.nongnu.org/download/freebangfont/Akaash-0.8.5.tar.bz2
@@ -13,8 +13,6 @@ URL: http://www.bengalinux.org/
 BuildArch:	noarch
 BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildRequires:	freetype-tools
-Requires(post): fontconfig
-Requires(postun): fontconfig
 
 Provides: fonts-tt-Akaash
 Provides: fonts-tt-Ani
@@ -62,13 +60,6 @@ install -m 644 Ani/COPYING %buildroot/%_docdir/%{name}-%{version}/
 
 %post
 touch %{_datadir}/fonts/TTF
-[ -x %_bindir/fc-cache ] && %{_bindir}/fc-cache 
-
-%postun
-# 0 means a real uninstall
-if [ "$1" = "0" ]; then
-   [ -x %_bindir/fc-cache ] && %{_bindir}/fc-cache 
-fi
 
 %clean
 rm -fr %buildroot
