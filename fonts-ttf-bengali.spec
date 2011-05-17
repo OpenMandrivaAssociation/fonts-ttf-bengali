@@ -11,6 +11,7 @@ Source2: http://savannah.nongnu.org/download/freebangfont/Likhan-0.5.tar.bz2
 Source3: http://savannah.nongnu.org/download/freebangfont/MuktiNarrow-0.94.tar.bz2
 URL: http://www.bengalinux.org/
 BuildArch:	noarch
+BuildRequires: fontconfig
 BuildRoot:	%_tmppath/%name-%version-%release-root
 BuildRequires:	freetype-tools
 
