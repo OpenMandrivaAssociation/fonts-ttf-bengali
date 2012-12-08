@@ -2,7 +2,7 @@ Summary: A set of Bangla fonts under GPL
 Name: fonts-ttf-bengali
 # version number is defined at http://www.bengalinux.org/downloads/
 Version: 0.5
-Release: %mkrel 11
+Release: %mkrel 13
 License: GPL
 Group: System/Fonts/True type
 Source0: http://savannah.nongnu.org/download/freebangfont/Akaash-0.8.5.tar.bz2
@@ -73,4 +73,63 @@ rm -fr %buildroot
 %_datadir/fonts/TTF/bengali/*.ttf
 
 
+
+
+
+%changelog
+* Tue May 17 2011 Funda Wang <fwang@mandriva.org> 0.5-11mdv2011.0
++ Revision: 675410
+- br fontconfig for fc-query used in new rpm-setup-build
+
+* Tue May 17 2011 Funda Wang <fwang@mandriva.org> 0.5-10
++ Revision: 675174
+- rebuild for new rpm-setup
+
+* Tue May 03 2011 Oden Eriksson <oeriksson@mandriva.com> 0.5-9
++ Revision: 664323
+- mass rebuild
+
+* Thu Dec 02 2010 Oden Eriksson <oeriksson@mandriva.com> 0.5-8mdv2011.0
++ Revision: 605190
+- rebuild
+
+* Wed Jan 20 2010 Paulo Ricardo Zanoni <pzanoni@mandriva.com> 0.5-7mdv2010.1
++ Revision: 494131
+- fc-cache is now called by an rpm filetrigger
+
+* Sat Mar 07 2009 Antoine Ginies <aginies@mandriva.com> 0.5-6mdv2009.1
++ Revision: 351042
+- rebuild
+
+* Tue Jun 17 2008 Thierry Vignaud <tv@mandriva.org> 0.5-5mdv2009.0
++ Revision: 220859
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Mon Dec 17 2007 Thierry Vignaud <tv@mandriva.org> 0.5-4mdv2008.1
++ Revision: 125107
+- kill re-definition of %%buildroot on Pixel's request
+
+
+* Fri Aug 04 2006 Helio Chissini de Castro <helio@mandriva.com>
++ 2006-08-04 23:10:44 (52885)
+- Normalize fonts with new paths
+
+* Fri Aug 04 2006 Helio Chissini de Castro <helio@mandriva.com>
++ 2006-08-04 20:59:01 (52792)
+- import fonts-ttf-bengali-0.5-3mdk
+
+* Tue Feb 07 2006 Frederic Crozat <fcrozat@mandriva.com> 0.5-3mdk
+- Don't package fontconfig cache file
+- Fix prereq
+- touch parent directory to workaround rpm changing directory last modification
+  time (breaking fontconfig cache consistency detection)
+
+* Tue Aug 10 2004 Pablo Saratxaga <pablo@mandrakesoft.com> 0.5-2mdk
+- corrected License: tag
+
+* Tue Aug 10 2004 Pablo Saratxaga <pablo@mandrakesoft.com> 0.5-1mdk
+- updated to Akaash 0.8.5, Ani 0.7.0, Likhan 0.5, MuktiNarrow 0.94
 
