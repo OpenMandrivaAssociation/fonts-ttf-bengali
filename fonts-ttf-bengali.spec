@@ -2,7 +2,7 @@ Summary:	A set of Bangla fonts under GPL
 Name:		fonts-ttf-bengali
 # version number is defined at http://www.bengalinux.org/downloads/
 Version:	0.5
-Release:	20
+Release:	21
 License:	GPLv2
 Group:		System/Fonts/True type
 Url:		http://www.bengalinux.org/
