@@ -5,7 +5,7 @@ Version:	0.5
 Release:	23
 License:	GPLv2
 Group:		System/Fonts/True type
-Url:		http://www.bengalinux.org/
+Url:		https://www.bengalinux.org/
 Source0:	http://savannah.nongnu.org/download/freebangfont/Akaash-0.8.5.tar.bz2
 Source1:	http://savannah.nongnu.org/download/freebangfont/Ani.tar.bz2
 Source2:	http://savannah.nongnu.org/download/freebangfont/Likhan-0.5.tar.bz2
